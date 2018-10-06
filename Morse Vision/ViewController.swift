@@ -88,7 +88,7 @@ class ViewController: UIViewController {
 
         // Use a display link instance to update label values
         let displaylink = CADisplayLink(target: self, selector: #selector(updateTimespanLabel))
-        displaylink.add(to: .current, forMode: .defaultRunLoopMode)
+        displaylink.add(to: .current, forMode: RunLoop.Mode.default)
     }
     
     override func viewWillAppear(_ animated: Bool) {
