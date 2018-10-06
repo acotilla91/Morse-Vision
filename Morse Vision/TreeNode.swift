@@ -9,7 +9,7 @@
 import UIKit
 
 // Tree data structure based on: https://www.raywenderlich.com/1053-swift-algorithm-club-swift-tree-data-structure
-class TreeNode: CustomStringConvertible {
+class TreeNode {
     var value: String
     private(set) var children: [TreeNode] = []
     private(set) weak var parent: TreeNode?
@@ -35,28 +35,6 @@ class TreeNode: CustomStringConvertible {
     
     func rightChild() -> TreeNode? {
         return children[safe: 1]
-    }
-    
-    func search(value: String) -> TreeNode? {
-        if value == self.value {
-            return self
-        }
-        
-        for child in children {
-            if let found = child.search(value: value) {
-                return found
-            }
-        }
-        
-        return nil
-    }
-    
-    var description: String {
-        var text = "\(value)"
-        if !children.isEmpty {
-            text += " {" + children.map { $0.description }.joined(separator: ", ") + "} "
-        }
-        return text
     }
     
     // Morse code tree based on: https://commons.wikimedia.org/wiki/File:Morse-code-tree.svg
