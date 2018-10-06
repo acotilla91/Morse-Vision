@@ -12,6 +12,7 @@
 		0C08E10321525D4300B66E48 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C08E10121525D4300B66E48 /* Main.storyboard */; };
 		0C08E10521525D4400B66E48 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C08E10421525D4400B66E48 /* Assets.xcassets */; };
 		0C08E10821525D4400B66E48 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C08E10621525D4400B66E48 /* LaunchScreen.storyboard */; };
+		0C08E11021526C0400B66E48 /* TreeNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C08E10F21526C0400B66E48 /* TreeNode.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		0C08E10421525D4400B66E48 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0C08E10721525D4400B66E48 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0C08E10921525D4400B66E48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0C08E10F21526C0400B66E48 /* TreeNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreeNode.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				0C08E10421525D4400B66E48 /* Assets.xcassets */,
 				0C08E10621525D4400B66E48 /* LaunchScreen.storyboard */,
 				0C08E10921525D4400B66E48 /* Info.plist */,
+				0C08E10F21526C0400B66E48 /* TreeNode.swift */,
 			);
 			path = "Morse Vision";
 			sourceTree = "<group>";
@@ -137,6 +140,7 @@
 			files = (
 				0C08E10021525D4300B66E48 /* ViewController.swift in Sources */,
 				0C08E0FE21525D4300B66E48 /* AppDelegate.swift in Sources */,
+				0C08E11021526C0400B66E48 /* TreeNode.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
