@@ -78,8 +78,14 @@ class ViewController: UIViewController {
     
     // MARK: - View Lifecycle -
     
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        setNeedsStatusBarAppearanceUpdate()
         
         dotSoundID = SystemSoundID.register(soundName: "dot_morse_code.caf")
         dashSoundID = SystemSoundID.register(soundName: "dash_morse_code.caf")
