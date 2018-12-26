@@ -1,7 +1,7 @@
 # Morse Vision
 More Vision is a simple app that utilizes ARKit to interpret blinks as morse code which are then transcribed to text. Alternatively, touch input can be used as well.
 
-![Demo](https://github.com/acotilla91/Morse+Vision/blob/master/more_vision_demo.gif)
+![Demo](https://github.com/acotilla91/Morse-Vision/blob/master/more_vision_demo.gif)
 
 
 ## Requirements
