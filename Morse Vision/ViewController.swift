@@ -76,6 +76,9 @@ class ViewController: UIViewController {
     
     var selectionTimer: Timer?
     
+    let lightFeedbackGenerator = UIImpactFeedbackGenerator(style: .light)
+    let mediumFeedbackGenerator = UIImpactFeedbackGenerator(style: .medium)
+    
     // MARK: - View Lifecycle -
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
@@ -187,10 +190,12 @@ class ViewController: UIViewController {
     
     @IBAction func touchUpInside(_ sender: Any) {
         handleEyeClosureCoefficient(coefficient: 0.0)
+        lightFeedbackGenerator.impactOccurred()
     }
     
     @IBAction func touchDown(_ sender: Any) {
         handleEyeClosureCoefficient(coefficient: 1.0)
+        mediumFeedbackGenerator.impactOccurred()
     }
 }
 
