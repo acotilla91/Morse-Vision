@@ -24,7 +24,7 @@ More Vision is a simple app that utilizes ARKit to interpret blinks as morse cod
 ## Configuration
 
 - To adjust timing, see the `Timing` struct in `ViewController`.
-- To use touch as the preferred input mode, update the `preferredInputMode` in `ViewController`.
+- To use touch as the preferred input mode, update the `preferredInputMode` constant in `ViewController`.
 
 ## Author
 
