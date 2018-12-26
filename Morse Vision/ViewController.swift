@@ -25,7 +25,7 @@ class ViewController: UIViewController {
     // More about morse code timing and speeds:
     // https://en.wikipedia.org/wiki/Morse_code#Representation,_timing,_and_speeds
     struct Timing {
-        static let dot = 0.3 // Average human blinking duration (https://en.wikipedia.org/wiki/Blinking)
+        static let dot = 0.3 // 0.3 is the average human blinking duration (https://en.wikipedia.org/wiki/Blinking)
         static let dash = dot * 3.0
         static let interElementGap = dot
         static let interLetterGap = dot * 3.0
@@ -86,7 +86,7 @@ class ViewController: UIViewController {
     
     // InputMode.vision is only supported on devices with a TrueDepth camera.
     // If the device does not support InputMode.vision, it'll default to InputMode.touch.
-    let preferredInputMode: InputMode = .touch
+    let preferredInputMode: InputMode = .vision
     
     // MARK: - View Lifecycle -
     
