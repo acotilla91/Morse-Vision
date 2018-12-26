@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -20,15 +20,12 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="X4w-tl-hhM">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" red="0.23512739320000001" green="0.46846158180000003" blue="0.89536722030000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal">
                                     <attributedString key="attributedTitle">
                                         <fragment>
-                                            <string key="content">TrueDepth camera unavailable.
-Tap and hold on the screen to simulate blinking.
-
-
-
+                                            <string key="content">Using touch as input mode. 
+Tap and hold on the screen to send morse code.
 
 
 
@@ -38,9 +35,48 @@ Tap and hold on the screen to simulate blinking.
 
 </string>
                                             <attributes>
-                                                <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <font key="NSFont" size="9" name=".AppleSystemUIFont"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <font key="NSFont" size="10" name="HelveticaNeue"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                    <tabStops>
+                                                        <textTab alignment="left" location="28">
+                                                            <options/>
+                                                        </textTab>
+                                                        <textTab alignment="left" location="56">
+                                                            <options/>
+                                                        </textTab>
+                                                        <textTab alignment="left" location="84">
+                                                            <options/>
+                                                        </textTab>
+                                                        <textTab alignment="left" location="112">
+                                                            <options/>
+                                                        </textTab>
+                                                        <textTab alignment="left" location="140">
+                                                            <options/>
+                                                        </textTab>
+                                                        <textTab alignment="left" location="168">
+                                                            <options/>
+                                                        </textTab>
+                                                        <textTab alignment="left" location="196">
+                                                            <options/>
+                                                        </textTab>
+                                                        <textTab alignment="left" location="224">
+                                                            <options/>
+                                                        </textTab>
+                                                        <textTab alignment="left" location="252">
+                                                            <options/>
+                                                        </textTab>
+                                                        <textTab alignment="left" location="280">
+                                                            <options/>
+                                                        </textTab>
+                                                        <textTab alignment="left" location="308">
+                                                            <options/>
+                                                        </textTab>
+                                                        <textTab alignment="left" location="336">
+                                                            <options/>
+                                                        </textTab>
+                                                    </tabStops>
+                                                </paragraphStyle>
                                             </attributes>
                                         </fragment>
                                     </attributedString>
@@ -101,6 +137,10 @@ Tap and hold on the screen to simulate blinking.
                             </label>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Za-h2-ftf">
                                 <rect key="frame" x="310.5" y="318" width="48.5" height="51.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="51.5" id="S8h-8Z-gwq"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="48.5" id="YOB-Pr-MbS"/>
+                                </constraints>
                                 <string key="text">Dash
 ⇢</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
@@ -115,17 +155,19 @@ Tap and hold on the screen to simulate blinking.
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="jvS-1v-EiK" secondAttribute="bottom" constant="20" id="05X-xw-tsy"/>
                             <constraint firstItem="w3g-Uj-2iQ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="19" id="4lT-28-9aA"/>
-                            <constraint firstItem="X4w-tl-hhM" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Pkr-n4-LQI"/>
+                            <constraint firstItem="w3g-Uj-2iQ" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="ZhK-rN-hhP" secondAttribute="trailing" constant="8" symbolic="YES" id="K1g-e1-Vxq"/>
+                            <constraint firstItem="X4w-tl-hhM" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="Pkr-n4-LQI"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jvS-1v-EiK" secondAttribute="trailing" constant="36" id="PyP-L5-jXX"/>
                             <constraint firstItem="nNY-xf-vOY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="22" id="R6J-dd-6xj"/>
+                            <constraint firstItem="6Za-h2-ftf" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="nNY-xf-vOY" secondAttribute="trailing" constant="8" symbolic="YES" id="Sg0-dt-Yyc"/>
                             <constraint firstItem="6Za-h2-ftf" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="Src-ba-q6E"/>
                             <constraint firstItem="ZhK-rN-hhP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Z3d-kd-sqC"/>
                             <constraint firstItem="X4w-tl-hhM" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="cUh-EW-3JJ"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="w3g-Uj-2iQ" secondAttribute="trailing" constant="16" id="kAi-qg-WMA"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6Za-h2-ftf" secondAttribute="trailing" constant="16" id="kJK-xp-EjV"/>
-                            <constraint firstItem="X4w-tl-hhM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="naP-LW-UDt"/>
+                            <constraint firstItem="X4w-tl-hhM" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="naP-LW-UDt"/>
                             <constraint firstItem="jvS-1v-EiK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="36" id="o3I-bp-ogi"/>
-                            <constraint firstItem="X4w-tl-hhM" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="p9M-2d-TUP"/>
+                            <constraint firstItem="X4w-tl-hhM" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottom" id="p9M-2d-TUP"/>
                             <constraint firstItem="nNY-xf-vOY" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="q8s-fd-EdN"/>
                             <constraint firstItem="ZhK-rN-hhP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="19" id="wFH-zc-VWy"/>
                         </constraints>
