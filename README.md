@@ -10,7 +10,7 @@ More Vision is a simple app that utilizes ARKit to interpret blinks as morse cod
 - Some morse code basis:
 	- https://morse.withgoogle.com/learn/
 	- https://en.wikipedia.org/wiki/Morse_code
-- Morse code tree:
+- Comprehensive understanding of the morse code tree:
 ![Demo](https://upload.wikimedia.org/wikipedia/commons/1/19/Morse-code-tree.svg)
 
 
