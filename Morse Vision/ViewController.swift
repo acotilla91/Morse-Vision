@@ -17,6 +17,11 @@ class ViewController: UIViewController {
         case opened
     }
     
+    enum InputMode {
+        case touch
+        case vision
+    }
+    
     // More about morse code timing and speeds:
     // https://en.wikipedia.org/wiki/Morse_code#Representation,_timing,_and_speeds
     struct Timing {
@@ -36,7 +41,7 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var blinkSimulatorButton: UIButton! {
         didSet {
-            if ARFaceTrackingConfiguration.isSupported {
+            if preferredInputMode == .vision && ARFaceTrackingConfiguration.isSupported {
                 blinkSimulatorButton.isHidden = true
             }
         }
@@ -79,6 +84,10 @@ class ViewController: UIViewController {
     let lightFeedbackGenerator = UIImpactFeedbackGenerator(style: .light)
     let mediumFeedbackGenerator = UIImpactFeedbackGenerator(style: .medium)
     
+    // InputMode.vision is only supported on devices with a TrueDepth camera.
+    // If the device does not support InputMode.vision, it'll default to InputMode.touch.
+    let preferredInputMode: InputMode = .touch
+    
     // MARK: - View Lifecycle -
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
@@ -103,7 +112,7 @@ class ViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        if ARFaceTrackingConfiguration.isSupported {
+        if preferredInputMode == .vision && ARFaceTrackingConfiguration.isSupported {
             let configuration = ARFaceTrackingConfiguration()
             sceneView.session.run(configuration)
         }
@@ -111,8 +120,8 @@ class ViewController: UIViewController {
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
-        
-        if ARFaceTrackingConfiguration.isSupported {
+
+        if preferredInputMode == .vision && ARFaceTrackingConfiguration.isSupported {
             sceneView.session.pause()
         }
     }
