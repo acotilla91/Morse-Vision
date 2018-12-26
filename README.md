@@ -20,6 +20,7 @@ More Vision is a simple app that utilizes ARKit to interpret blinks as morse cod
 2. Blink away (or tap, depending on the input mode).
 	- "short" blink: dot.
 	- "long" blink: dash.
+3. To reset the transcribed text, tap on the transcription label.
 
 ## Configuration
 
