@@ -6,7 +6,7 @@ More Vision is a simple app that utilizes ARKit to interpret blinks as morse cod
 
 ## Requirements
 
-- iOS device with a TrueDepth camera. *(A device with no TrueDepth camera can be used, but it will only support touch as the input mode)*
+- iOS device with a TrueDepth camera. *(A device without a TrueDepth camera can be used as well, but it will only support touch as the input mode)*
 - Some morse code basis:
 	- https://morse.withgoogle.com/learn/
 	- https://en.wikipedia.org/wiki/Morse_code
